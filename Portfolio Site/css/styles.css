@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Gelasio', serif;
+}
+
+h1 {
+  color: #0f3057;
+  font-size: 562.5%;
+  margin: 50px auto 0 auto;
+  font-weight: 500;
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  color: #004a7c;
+  padding: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 300%;
+  font-weight: normal;
+}
+
+h3 {
+  color: #3d84a8;
+  font-family: 'Cabin', sans-serif;
+  font-size: 150%;
+}
+
+p {
+  color: #484a48;
+  line-height: 2;
+  font-size: 120%;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #54a0c7;
+  font-family: 'Cabin', sans-serif;
+  margin: 10px 45px;
+  font-size: 130%;
+}
+
+a:hover {
+  color: #484a48;
+}
+
+.subtitle {
+  color: #004a7c;
+  margin-top: 0;
+  font-size: 160%;
+}
+
+.top-container {
+  background-color: #bad7df;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.intro {
+  width: 35%;
+  margin: auto;
+}
+
+.skill-row {
+  width:50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.graphicdesign {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.programming {
+  width:25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto;
+  line-height: 2;
+}
+
+.copyright {
+  color: #54a0c7;
+  font-size: 85%;
+  padding:30px 0;
+}
+
+.mybutton {
+	background-color:#004a7c;
+  width:15%;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Cabin', sans-serif;
+	font-size:15px;
+	padding:16px 24px;
+	text-decoration:none;
+}
+.mybutton:hover {
+	background-color:#3d84a8;
+}
+.mybutton:active {
+	position:relative;
+	top:1px;
+}
+
+.bottom-container {
+  background-color: #bad7df;
+  padding: 30px 0 5px;
+
+}
