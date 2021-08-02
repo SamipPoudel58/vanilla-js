@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-primary: #00d1fe;
+  --c-secondary: #21264d;
+}
+.container {
+  height: 100vh;
+  background: linear-gradient(to bottom, #303966, #21264d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meter__holder {
+  position: relative;
+}
+
+.circle-glow {
+  background-color: #00d1fe;
+  height: 200px;
+  width: 400px;
+  border-radius: 300px 300px 0 0;
+  box-shadow: 0 0 50px rgba(0, 207, 254, 0.582);
+}
+
+.circle-dark {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #21264d;
+  height: 140px;
+  width: 280px;
+  border-radius: 300px 300px 0 0;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+
+.pointer {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  height: 10px;
+  width: 140px;
+  left: 60px;
+  box-shadow: 0 0 50px rgb(0, 0, 0);
+  transform-origin: right;
+}
+
+.pointer__dot {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+.data {
+  margin-top: 1rem;
+  color: #00d1fe;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 0 50px rgba(0, 207, 254, 0.582);
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 0.5rem 0;
+  text-shadow: none;
+}
+
+.check {
+  margin-top: 3rem;
+  border: none;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--c-primary);
+  background-color: transparent;
+  color: var(--c-primary);
+  font-weight: bold;
+  font-family: "Barlow";
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.check:hover {
+  background-color: var(--c-primary);
+  color: var(--c-secondary);
+}
+
+.footer {
+  font-family: Barlow;
+  color: rgb(165, 164, 164);
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  10% {
+    transform: rotate(150deg);
+  }
+
+  20% {
+    transform: rotate(70deg);
+  }
+
+  30% {
+    transform: rotate(120deg);
+  }
+
+  40% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* yes the responsiveness is kinda hacky, but check my giveashitometer again */
+@media only screen and (max-width: 500px) {
+  .container {
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+  .meter__holder {
+    transform: scale(0.6);
+  }
+
+  .data {
+    margin-top: 0;
+  }
+
+  .check {
+    margin-top: 2rem;
+  }
+}
