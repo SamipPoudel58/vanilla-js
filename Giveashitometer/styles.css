@@ -16,6 +16,13 @@
   justify-content: center;
 }
 
+.title {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3rem;
+}
+
 .meter__holder {
   position: relative;
 }
